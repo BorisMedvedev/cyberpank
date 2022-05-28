@@ -1,0 +1,80 @@
+.player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 585px;
+
+  &__img {
+    position: relative;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    border: 1px solid rgb(58, 58, 58);
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url("../../images/play.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 99;
+  }
+
+  &__info {
+    padding: 25px;
+    text-align: center;
+    background-image: url("../../images/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 19px;
+    font-size: 21px;
+    color: #e4e4e4;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 21px;
+    font-size: 16px;
+    color: #f8c275;
+  }
+
+  &__btn-bottom {
+    max-width: 250px;
+    width: 100%;
+    padding: 17px 70px;
+    border-radius: 10px;
+    color: #e4e4e4;
+    background: linear-gradient(
+      90deg,
+      rgb(44, 21, 0) 0%,
+      rgb(72, 24, 8) 10%,
+      rgb(164, 90, 24) 88%,
+      rgb(255, 132, 12) 100%
+    );
+    text-transform: uppercase;
+  }
+}
+
+.player__btn-bottom.player__btn-bottom--active {
+  background: #171717;
+  color: #6d6c6c;
+}
+
+.player__info-box {
+  display: none;
+}
+
+.player__info-box.player__info-box--active {
+  display: block;
+}

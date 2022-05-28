@@ -1,0 +1,75 @@
+.hero {
+  height: 100vh;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.registration {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: $white;
+
+  &__promocode {
+    max-width: 255px;
+    text-align: center;
+  }
+
+  &__promocode-btn {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__promocode-img {
+    display: flex;
+  }
+  &__box {
+    text-align: center;
+  }
+  &__box-btn {
+    padding: 20px 60px 10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #fffefe;
+    background: linear-gradient(
+      180deg,
+      rgb(37, 0, 251) 42%,
+      rgb(113, 129, 247) 92%
+    );
+    border-radius: 10px;
+
+    & span {
+      color: #9c9c9c;
+      font-size: 12px;
+    }
+  }
+  &__box-info span {
+    color: #f8c275;
+  }
+  &__promocode-timer {
+    position: relative;
+    display: flex;
+    &--left {
+      justify-content: center;
+    }
+  }
+}
+.clock {
+  position: absolute;
+  right: -10px;
+  top: 1px;
+  display: flex;
+  margin-left: 5px;
+  color: #f8c275;
+  & span {
+    padding-left: 7px;
+  }
+}
