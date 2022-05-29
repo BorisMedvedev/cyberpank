@@ -4,13 +4,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 585px;
-  display: none;
+  overflow: hidden;
+
   @include r(560) {
     width: 90%;
   }
 
   &__img {
     position: relative;
+
+    & img {
+      max-width: 585px;
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -28,6 +34,12 @@
     background-position: center;
     background-size: contain;
     z-index: 99;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: -2px 0px 14px 10px rgba(248, 194, 117, 0.3);
+    }
+
     @include r(768) {
       width: 50px;
       height: 50px;
@@ -41,6 +53,7 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
+
     @include r(768) {
       padding: 15px;
     }
@@ -51,6 +64,7 @@
     margin-bottom: 19px;
     font-size: 21px;
     color: #e4e4e4;
+
     @include r(768) {
       font-size: 16px;
     }
@@ -61,6 +75,7 @@
     margin-bottom: 21px;
     font-size: 16px;
     color: #f8c275;
+
     @include r(768) {
       font-size: 14px;
     }
@@ -79,7 +94,15 @@
       rgb(164, 90, 24) 88%,
       rgb(255, 132, 12) 100%
     );
+    opacity: 0.7;
     text-transform: uppercase;
+    transition: opacity 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: -2px 0px 14px 10px rgba(248, 194, 117, 0.2);
+      opacity: 1;
+    }
+
     @include r(1120) {
       padding: 17px 17px;
       max-width: 100%;
@@ -92,6 +115,11 @@
 .player__btn-bottom.player__btn-bottom--active {
   background: #171717;
   color: #6d6c6c;
+  opacity: 0.7;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .player__info-box {

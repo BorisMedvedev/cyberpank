@@ -15,8 +15,12 @@
     }
   }
   &__link {
+    transition: color 0.3s;
     @include r(560) {
       font-size: 16px;
+    }
+    &:hover {
+      color: $white;
     }
   }
 }
