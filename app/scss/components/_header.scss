@@ -11,8 +11,14 @@
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
+  @include r(1024) {
+    max-width: 80px;
+  }
 }
 .nav {
+  @include r(1024) {
+    display: none;
+  }
   &__list {
     display: flex;
     justify-content: flex-end;

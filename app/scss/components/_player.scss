@@ -4,6 +4,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 585px;
+  display: none;
+  @include r(560) {
+    width: 90%;
+  }
 
   &__img {
     position: relative;
@@ -24,6 +28,10 @@
     background-position: center;
     background-size: contain;
     z-index: 99;
+    @include r(768) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__info {
@@ -33,6 +41,9 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
+    @include r(768) {
+      padding: 15px;
+    }
   }
 
   &__title {
@@ -40,6 +51,9 @@
     margin-bottom: 19px;
     font-size: 21px;
     color: #e4e4e4;
+    @include r(768) {
+      font-size: 16px;
+    }
   }
 
   &__text {
@@ -47,6 +61,9 @@
     margin-bottom: 21px;
     font-size: 16px;
     color: #f8c275;
+    @include r(768) {
+      font-size: 14px;
+    }
   }
 
   &__btn-bottom {
@@ -63,6 +80,12 @@
       rgb(255, 132, 12) 100%
     );
     text-transform: uppercase;
+    @include r(1120) {
+      padding: 17px 17px;
+      max-width: 100%;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
   }
 }
 

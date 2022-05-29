@@ -8,17 +8,31 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  @include r(1024) {
+    padding-bottom: 10px;
+  }
 }
 
 .registration {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   color: $white;
+  @include r(1024) {
+    font-size: 14px;
+  }
+  @include r(660) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__promocode {
     max-width: 255px;
     text-align: center;
+    @include r(1024) {
+      margin-bottom: 15px;
+    }
   }
 
   &__promocode-btn {
@@ -26,6 +40,13 @@
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
+    @include r(1024) {
+      width: 25px;
+      height: 25px;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
   }
   &__promocode-img {
     display: flex;
@@ -45,10 +66,20 @@
       rgb(113, 129, 247) 92%
     );
     border-radius: 10px;
+    @include r(1024) {
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
 
     & span {
       color: #9c9c9c;
       font-size: 12px;
+    }
+  }
+  &__box-info {
+    @include r(1024) {
+      margin-bottom: 15px;
     }
   }
   &__box-info span {
