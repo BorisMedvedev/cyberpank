@@ -9,9 +9,7 @@
   "author": "Medvedev Boris",
   "license": "ISC",
   "devDependencies": {
-    "accordion-js": "^3.3.0",
     "browser-sync": "^2.27.7",
-    "choices.js": "^9.1.0",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -26,10 +24,8 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
-    "sass": "^1.43.4",
-    "simplebar": "^5.3.6",
-    "swiper": "^8.1.4",
-    "tippy.js": "^6.3.7"
+    "sass": "^1.43.4"
+
   },
   "dependencies": {
     "trim-newlines": "^4.0.2"

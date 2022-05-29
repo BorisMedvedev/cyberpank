@@ -24,14 +24,7 @@ const htmlInclude = () => {
 };
 
 function scripts() {
-  return src([
-    "node_modules/swiper/swiper-bundle.min.js",
-    "node_modules/choices.js/public/assets/scripts/choices.js",
-    "node_modules/accordion-js/dist/accordion.min.js",
-    "node_modules/simplebar/dist/simplebar.min.js",
-    "node_modules/jquery/dist/jquery.js",
-    "app/js/main.js",
-  ])
+  return src(["app/js/main.js"])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))
@@ -112,7 +105,7 @@ function styles() {
 function build() {
   return src(
     [
-      "app/**/*.html",
+      "app/index.html",
       "app/css/style.css",
       "app/fonts/**/*",
       "app/images/**/*",
