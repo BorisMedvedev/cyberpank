@@ -5,28 +5,12 @@
   left: 0;
   right: 0;
   text-align: center;
-  @include r(760) {
-    padding: 10px;
-  }
 }
 .logo {
   position: absolute;
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
-  @include r(760) {
-    position: inherit;
-    margin: 0 auto;
-
-    width: 150px;
-  }
-  &__img {
-    @include r(760) {
-      position: inherit;
-      margin: 0 auto;
-      width: 150px;
-    }
-  }
 }
 .nav {
   @include r(1024) {

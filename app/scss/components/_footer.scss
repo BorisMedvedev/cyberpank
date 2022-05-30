@@ -12,6 +12,7 @@
     @include r(1024) {
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
   }
   &__link {
