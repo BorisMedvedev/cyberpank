@@ -18,7 +18,8 @@
   &__link {
     transition: color 0.3s;
     @include r(560) {
-      font-size: 16px;
+      text-align: center;
+      font-size: 14px;
     }
     &:hover {
       color: $white;
