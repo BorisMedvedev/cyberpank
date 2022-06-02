@@ -1,10 +1,11 @@
 .hero {
-  padding-bottom: 40px;
+
+  padding-bottom: 20px;
   padding-top: 160px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("../images/bg.jpg");
+  background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -87,26 +88,20 @@
 
   &__box-btn {
     padding: 20px 60px 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     font-size: 22px;
     color: #fffefe;
-    background: linear-gradient(
-      180deg,
-      rgb(4, 51, 83),
-      rgb(4, 124, 189),
-      rgb(4, 51, 83)
-    );
+    background-image: url("../../images/button3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+        width: 404px;
+    height: 100px;
     border-radius: 10px;
     transition: all 0.3s;
+    
     &:hover {
-      background: linear-gradient(
-        180deg,
-        rgb(0, 110, 186),
-        rgb(74, 180, 238),
-        rgb(0, 98, 165)
-      );
-      box-shadow: 0px 1px 16px 6px rgba(4, 116, 196, 0.8);
+
     }
 
     @include r(1024) {
