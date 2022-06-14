@@ -76,14 +76,6 @@ function browsersync() {
   });
 }
 
-const imgToApp = () => {
-  return src([
-    "app/images/**/*.png",
-    "app/images/**/*.jpg",
-    "app/images/**/*.jpeg",
-  ]).pipe(dest("app/images"));
-};
-
 function styles() {
   return src("app/scss/style.scss")
     .pipe(
@@ -144,6 +136,5 @@ exports.default = parallel(
   svg,
   scripts,
   browsersync,
-  imgToApp,
   watching
 );
