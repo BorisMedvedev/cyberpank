@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'roboto', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -58,22 +58,45 @@ img {
   cursor: pointer;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
   overflow: hidden;
 }
 
 .title {
   margin: 0 0 25px;
+  font-family: 'archangelsk', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 62px;
+  line-height: 63px;
+}
+
+.angle-slice {
+  clip-path: polygon(6% 0, 100% 0, 100% 91%, 94% 100%, 0 100%, 0 10%);
+}
+
+.btn {
+  padding: 19px 47px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: $accent;
+  background-color: $black;
+}
+
+.descr-highlighted {
+  font-family: 'roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  color: #52BEDC;
+
 }
