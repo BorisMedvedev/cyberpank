@@ -24,8 +24,8 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
+    "swiper": "^8.1.4",
     "sass": "^1.43.4"
-
   },
   "dependencies": {
     "trim-newlines": "^4.0.2"
